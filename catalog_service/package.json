@@ -1,0 +1,35 @@
+{
+  "name": "catalog_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "nodemon src/server.ts",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.3",
+    "@types/rosie": "^0.0.45",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.11",
+    "prisma": "^7.2.0",
+    "rosie": "^2.1.1",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
