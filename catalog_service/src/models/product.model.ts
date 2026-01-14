@@ -1,12 +1,21 @@
 export class Product {
+  name: string;
+  description: string;
+  stock: number;
+  price: number;
+  id?: number;
 
   constructor(
-    public readonly name: string,
-    public readonly description: string,
-    public readonly price: number,
-    public readonly stock: number,
-    public readonly id?: number,
+    name: string,
+    description: string,
+    stock: number,
+    price: number,
+    id: number
   ) {
-
+    this.name = name;
+    this.description = description;
+    this.stock = stock;
+    this.price = price;
+    this.id = id;
   }
 }
