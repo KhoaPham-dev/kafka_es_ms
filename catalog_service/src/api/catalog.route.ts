@@ -28,7 +28,7 @@ router.post("/products", async (req: Request, res: Response, next: NextFunction)
 
 router.get("/products", async (req: Request, res: Response, next: NextFunction) => {
   const limit = parseInt(req.query.limit as string) || 0
-  const offset = parseInt(req.query.limit as string) || 0
+  const offset = parseInt(req.query.offset as string) || 0
   const data = await catalogService.getProducts(limit, offset)
 
   res.status(200).json(data)
@@ -65,7 +65,7 @@ router.patch("/products/:id", async (req: Request, res: Response, next: NextFunc
 })
 
 router.delete("/products/:id", async (req: Request, res: Response, next: NextFunction) => {
-  const id = parseInt(req.params.id || "0")
+  const id = parseInt(req.params.id as string || "0")
   const data = await catalogService.deleteProduct(id)
 
   res.status(200).json(data)

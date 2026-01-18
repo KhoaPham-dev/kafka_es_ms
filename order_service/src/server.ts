@@ -1,6 +1,6 @@
 import expressApp from './expressApp.ts'
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 10000;
 
 export const startServer = async () => {
 
