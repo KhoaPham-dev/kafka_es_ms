@@ -1,0 +1,1 @@
+ALTER TABLE "carts" ADD COLUMN "new_col" integer NOT NULL;
